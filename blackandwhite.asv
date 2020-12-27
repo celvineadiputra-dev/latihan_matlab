@@ -1,0 +1,28 @@
+clc 
+clear all
+
+I = imread('Img/github.png');
+
+Red = I(:,:,1);
+Green = I(:,:,2);
+Blue = I(:,:,3);
+
+grayscale = Red * 0.299 + Green * 0.587 + Blue * 0.114;
+
+
+
+figure
+subplot(2,2,1)
+imshow(I)
+title("Image Asli")
+
+subplot(2,2,2)
+imshow(im2bw(grayscale))
+title("black and white")
+
+subplot(2,2,3)
+imshow(~grayscale)
+title("black and white")
+
+
+grayscale
