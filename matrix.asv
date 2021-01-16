@@ -1,0 +1,27 @@
+clc;
+close all;
+clear;
+
+A = [1 2 3; 3 4 2; 8 2 3]
+B = [4 5 2; 9 1 2; 9 2 1]
+
+%perkalian
+C = A * B
+
+%penjumlahan
+D = A + B
+
+%pembagian 
+
+E = A/B
+E = A\B
+
+%inverse
+F = inv(A)
+
+%transpose
+G = A'
+G = transpose(A)
+
+%determinan
+H = det(A)
