@@ -38,7 +38,7 @@ for ii = 1:numel(N)
         
         subplot(Y,X, numel(C) + n);
         imshow(I);hold on;
-        plot(points.selectStrongest(36));
+        plot(points.selectStrongest(16));
         title(splitName(1))
         
         
