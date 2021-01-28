@@ -18,7 +18,7 @@ end
 X = 2;
 Y = 3;
 
-figure("Name", "Biner", "NumberTitle", "off")
+figure("Name", "Biner Subplot", "NumberTitle", "off")
 subplot(Y,X, 1)
 imshow(im2bw(I)); hold on;
 imshow(imresize(imcrop(I,[304.5 64.5 601 507]), 0.5));
